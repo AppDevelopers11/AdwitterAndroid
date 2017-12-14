@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/title_bar_promoter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp">
+
+        <com.smubator.adwitter.CustomFonts.MyCustomTextView
+            android:id="@+id/nosPost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center_vertical"
+
+            android:text="@string/noPost"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.smubator.adwitter.CustomFonts.MyCustomTextView
+            android:id="@+id/Post20to40"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="@string/post20to40"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.smubator.adwitter.CustomFonts.MyCustomTextView
+            android:id="@+id/Post40to80"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="@string/post40to80"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.smubator.adwitter.CustomFonts.MyCustomTextView
+            android:id="@+id/Post80to40"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="@string/postgreater80"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+</LinearLayout>

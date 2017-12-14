@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundGray"
+    tools:context="com.smubator.adwitter.Promoter.activity.PromoterSchedulingActivity">
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/title_bar_promoter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleLayout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/linearDots"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivFirst"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_above="@+id/ivSecond"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:src="@drawable/gray_point" />
+
+                <ImageView
+                    android:id="@+id/ivSecond"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10ssp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gray_point" />
+
+                <ImageView
+                    android:id="@+id/ivThird"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10ssp"
+                    android:layout_below="@+id/ivSecond"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/blue_point" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/linearDots"
+                android:layout_toRightOf="@+id/linearDots"
+                android:orientation="vertical">
+
+                <com.smubator.adwitter.CustomFonts.MyCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/schedulingSettings"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlPublishingSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <ImageView
+                        android:id="@+id/ivBright"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/brightness" />
+
+                    <com.smubator.adwitter.CustomFonts.MyCustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivBright"
+                        android:layout_toRightOf="@+id/ivBright"
+                        android:text="@string/publishing"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="#E7E7F0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rlMaxPostQuantity"
+                    android:layout_height="@dimen/_40sdp">
+
+                    <ImageView
+                        android:id="@+id/ivBright1"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/topic_targetting" />
+
+                    <com.smubator.adwitter.CustomFonts.MyCustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivBright1"
+                        android:layout_toRightOf="@+id/ivBright1"
+                        android:text="@string/MaxPost"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="#E7E7F0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:orientation="vertical">
+
+                    <com.smubator.adwitter.CustomFonts.MyCustomTextView
+                        android:id="@+id/tvTermsAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/termsAndConditions"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_22ssp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.smubator.adwitter.CustomFonts.MyCustomTextView
+                        android:id="@+id/tvAcceptTerms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AcceptTerms"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <com.smubator.adwitter.CustomFonts.MyCustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAcceptTerms"
+                        android:text="@string/readTermsAndConditions"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:buttonTint="#2F80ED" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ivArrowRight"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:src="@drawable/btn_intro_right_arrow" />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rlTop"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivBackImage"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:src="@drawable/ic_backimage" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="@dimen/_70sdp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginTop="@dimen/_5sdp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivUserImage"-->
+    <!--android:layout_width="@dimen/_40sdp"-->
+    <!--android:layout_height="@dimen/_40sdp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginEnd="@dimen/_20sdp"-->
+    <!--android:layout_marginRight="@dimen/_20sdp"-->
+    <!--android:layout_marginTop="@dimen/_5sdp"-->
+    <!--android:src="@drawable/mode_selection_promoter_avatar" />-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@+id/ivUserImage"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_5sdp"-->
+    <!--android:text="switch mode"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textSize="@dimen/_8ssp" />-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/rlTop"-->
+    <!--android:fillViewport="true">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.45"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/_10sdp"-->
+    <!--android:layout_marginStart="@dimen/_10sdp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/_3sdp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/_50sdp"-->
+    <!--android:layout_height="@dimen/_50sdp"-->
+    <!--android:src="@drawable/mode_selection_promoter_avatar"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="@dimen/_10sdp"-->
+    <!--android:layout_marginStart="@dimen/_10sdp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:src="@drawable/mode_selection_promoter_avatar"-->
+    <!--android:text="@string/scheduling"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/_22ssp"-->
+    <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/_45sdp"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivFirst"-->
+    <!--android:layout_width="@dimen/_10sdp"-->
+    <!--android:layout_height="@dimen/_10sdp"-->
+    <!--android:layout_above="@+id/ivSecond"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="@dimen/_20sdp"-->
+    <!--android:src="@drawable/gray_point" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivSecond"-->
+    <!--android:layout_width="@dimen/_10sdp"-->
+    <!--android:layout_height="@dimen/_10sdp"-->
+    <!--android:layout_above="@+id/ivThird"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="@dimen/_20sdp"-->
+    <!--android:src="@drawable/gray_point" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivThird"-->
+    <!--android:layout_width="@dimen/_10sdp"-->
+    <!--android:layout_height="@dimen/_10sdp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:src="@drawable/blue_point" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/schedulingSettings"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textSize="@dimen/_8sdp" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_40sdp"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="@dimen/_5sdp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivBright"-->
+    <!--android:layout_width="@dimen/_18sdp"-->
+    <!--android:layout_height="@dimen/_18sdp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/brightness" />-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--android:layout_marginStart="@dimen/_5sdp"-->
+    <!--android:layout_toEndOf="@+id/ivBright"-->
+    <!--android:layout_toRightOf="@+id/ivBright"-->
+    <!--android:text="@string/publishing"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/_14ssp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/_20sdp"-->
+    <!--android:layout_height="@dimen/_20sdp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:src="@drawable/next" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:background="@android:color/darker_gray" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_1sdp"-->
+    <!--android:background="@color/viewcolor" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_40sdp"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="@dimen/_5sdp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/brightness"-->
+    <!--android:layout_width="@dimen/_18sdp"-->
+    <!--android:layout_height="@dimen/_18sdp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/topic_targetting" />-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--android:layout_marginStart="@dimen/_5sdp"-->
+    <!--android:layout_toEndOf="@+id/brightness"-->
+    <!--android:layout_toRightOf="@+id/brightness"-->
+    <!--android:text="@string/MaxPost"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/_14ssp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/_20sdp"-->
+    <!--android:layout_height="@dimen/_20sdp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:src="@drawable/next" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:background="@android:color/darker_gray" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_1sdp"-->
+    <!--android:background="@color/viewcolor" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginLeft="@dimen/_45sdp"-->
+    <!--android:layout_marginStart="@dimen/_45sdp"-->
+    <!--android:layout_weight="0.55"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:id="@+id/tvTermsAndConditions"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/termsAndConditions"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/_22ssp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivArrowRight"-->
+    <!--android:layout_width="@dimen/_55sdp"-->
+    <!--android:layout_height="@dimen/_55sdp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="@dimen/_5sdp"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:src="@drawable/btn_intro_right_arrow" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_40sdp"-->
+    <!--android:layout_below="@+id/tvTermsAndConditions"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_10sdp">-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:id="@+id/tvAcceptTerms"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/AcceptTerms"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/_14ssp" />-->
+
+    <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tvAcceptTerms"-->
+    <!--android:text="@string/readTermsAndConditions"-->
+    <!--android:textColor="@android:color/darker_gray"-->
+    <!--android:textSize="@dimen/_10ssp" />-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbAcceptTermsAndConditions"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:checked="true" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginEnd="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:background="@android:color/darker_gray" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>

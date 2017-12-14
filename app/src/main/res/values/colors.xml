@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2D9CDB</color>
+    <color name="blue">#2D9CDB</color>
+    <color name="lightblue">#0F938DFF</color>
+    <color name="verifyblue">#F0938CFF</color>
+    <color name="bgtickcolor">#B8B4FF</color>
+    <color name="textcolor">#5020FD</color>
+    <color name="backGroundGray">#e5e5e5</color>
+    <color name="viewcolor">#e5e5e5</color>
+</resources>

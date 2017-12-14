@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_promoter"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.smubator.adwitter.VerificationActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_above="@+id/viewCenterInParent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_110sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dwitter_round" />
+
+    <View
+        android:id="@+id/viewCenterInParent"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/viewCenterInParent"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:layout_marginLeft="@dimen/_48sdp"
+        android:layout_marginRight="@dimen/_48sdp"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlCountryCode"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/mobile_base"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13ssp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:background="@drawable/mobile_base">
+
+            <RelativeLayout
+                android:id="@+id/rlMobile"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/mobile_image" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_toEndOf="@+id/rlMobile"
+                android:layout_toLeftOf="@+id/rlSendOtpBtn"
+                android:layout_toRightOf="@+id/rlMobile"
+                android:layout_toStartOf="@+id/rlSendOtpBtn"
+                android:background="@null"
+                android:hint="@string/mobileHint"
+                android:inputType="number"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:textSize="@dimen/_13ssp" />
+
+            <RelativeLayout
+                android:id="@+id/rlSendOtpBtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/bgtickcolor"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tick" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewCenterInParent"
+        android:orientation="vertical">
+
+        <com.smubator.adwitter.Pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cursorVisible="false"
+            app:forceKeyboard="false"
+            app:hint="*"
+            app:inputType="number"
+            app:password="false"
+            app:pinBackground="@drawable/mobile_base"
+            app:pinHeight="@dimen/_40sdp"
+            app:pinLength="4"
+            app:pinWidth="@dimen/_40sdp" />
+
+        <com.smubator.adwitter.CustomFonts.MyCustomButton
+                android:id="@+id/verifyButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:layout_marginLeft="@dimen/_48sdp"
+            android:layout_marginRight="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="@string/verify"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_14ssp"
+            android:weightSum="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

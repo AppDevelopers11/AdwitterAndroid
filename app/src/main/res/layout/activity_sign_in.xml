@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_promoter"
+    tools:context="com.smubator.adwitter.SignInAcitivity">
+
+    <ImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_above="@+id/viewCenterInParent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_110sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dwitter_round" />
+
+    <View
+        android:id="@+id/viewCenterInParent"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/viewCenterInParent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/background_button">
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/_20sdp"-->
+            <!--android:layout_height="@dimen/_20sdp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginEnd="@dimen/_4sdp"-->
+            <!--android:layout_marginRight="@dimen/_4sdp"-->
+            <!--android:layout_toLeftOf="@+id/signInText"-->
+            <!--android:layout_toStartOf="@+id/signInText"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/twitter_image" />-->
+
+        <!--<com.smubator.adwitter.CustomFonts.MyCustomTextView-->
+            <!--android:id="@+id/signInText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--android:layout_marginStart="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/signIn"-->
+            <!--android:textColor="@color/textcolor"-->
+            <!--android:textSize="@dimen/_14ssp" />-->
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/btnLoginTwitter"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

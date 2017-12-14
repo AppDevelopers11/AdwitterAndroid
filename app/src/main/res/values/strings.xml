@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Adwitter</string>
+    <string name="signIn">Sign In</string>
+    <string name="verify">Verify</string>
+    <string name="accounts">Accounts</string>
+    <string name="accountsettings">Account Settings</string>
+    <string name="targetSettings">Targeting Settings</string>
+    <string name="location">Location (Country/City)</string>
+    <string name="topictarget">Topic Targeting</string>
+    <string name="audTarget">Audiance Targets</string>
+    <string name="gender">Gender</string>
+    <string name="accountSstatus">Account Status:</string>
+    <string name="age">Age</string>
+    <string name="CW">CVV</string>
+    <string name="active">active</string>
+    <string name="trackmyorder">Track My Order</string>
+    <string name="congrats">Congratulations!\nYour Payment is accepted</string>
+    <string name="admitIt">Admit it. Before you took that first cruise,\nyour thoughts about cruise ships.</string>
+    <string name="expires">Expires</string>
+    <string name="cardHolder">Card Holder</string>
+    <string name="cardno.">Card Number</string>
+    <string name="creditDetails">CREDIT DETAILS</string>
+    <string name="Payment">Payment</string>
+    <string name="Reports">Reports</string>
+    <string name="History">History</string>
+    <string name="language">Language</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="settingsProfile">Settings Profile</string>
+    <string name="calSupport">Call Support</string>
+    <string name="scheduling">Scheduling</string>
+    <string name="MaxPost">Maximum Post Quantity</string>
+    <string name="publishing">Publishing Schedule</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="contentOwner">Content Owner</string>
+    <string name="campaignDetail">Campaign Detail</string>
+    <string name="contentOwnerText">You want to share your contents \nthrow our SM Account Network</string>
+    <string name="promoter">Promoter</string>
+    <string name="promoterText">You want to enable promoting \nContent in your owned SM Accounts</string>
+    <string name="promoterText1">You want to enable promoting \nContent in your owned SM\nAccounts</string>
+    <string name="posts">Posts</string>
+    <string name="Starting">Starting</string>
+    <string name="Content">Content</string>
+    <string name="clicks">Clicks</string>
+    <string name="runnigDay">Running Day</string>
+    <string name="content">Content</string>
+    <string name="name">Name:</string>
+    <string name="email">Email</string>
+    <string name="income">Income</string>
+    <string name="search">Search&#8230;</string>
+
+    <string name="introText">You are about to make Business</string>
+    <string name="welcomeToDwitter">Welcome \nto \nAdwitter</string>
+    <string name="mobileHint">Mobile</string>
+    <string name="profileSetup">Profile Setup</string>
+    <string name="promoterAccount">Promoter\nAccounts</string>
+    <string name="selectMode">Select Mode</string>
+    <string name="termsAndConditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="AcceptTerms">Accept Terms</string>
+    <string name="readTermsAndConditions"><![CDATA[Read Terms & Conditions]]></string>
+    <string name="schedulingSettings">Scheduling Settings</string>
+    <string name="congratsPaymentAccepted">Congratulations!\nYour Payment is Accepted</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="InActive">inactive</string>
+    <string name="balance">balance:</string>
+    <string name="Home">Home</string>
+
+
+    <!-- Toast Message -->
+    <string name="etMobileNumberEmpty">Please enter mobile number</string>
+    <string name="selectCounty">--  Select Country --</string>
+    <string name="selectState">-- Select States --</string>
+    <string name="selectCity">-- Select City --</string>
+    <string name="select">Select</string>
+    <string name="selectLocation"></string>
+
+    <string name="Fetching">Fetching Otp</string>
+    <string name="Posts">Posts</string>
+
+    <string name="younger">Younger</string>
+    <string name="elder">Elder</string>
+    <string name="older">Older</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+
+    <string name="selectAge">Select Age</string>
+    <string name="selectGender">Select Gender</string>
+    <string name="selectLanguage">Select Language</string>
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="time">Time</string>
+    <string name="logOut">Logout</string>
+    <string name="paymentAndFinancials">Payment</string>
+    <string name="switchMode">Switch Mode</string>
+    <string name="aboutUs">About Us</string>
+    <string name="noPost">No Post</string>
+    <string name="post20to40">20 - 40</string>
+    <string name="post40to80">40 - 80</string>
+    <string name="postgreater80"><![CDATA[> 80]]></string>
+    <!--Toast-->
+
+    <string-array name="spAge">
+        <item>@string/age</item>
+        <item>@string/younger</item>
+        <item>@string/elder</item>
+        <item>@string/older</item>
+    </string-array>
+    <string-array name="spGender">
+        <item>@string/gender</item>
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string-array name="spLanguage">
+        <item>@string/language</item>
+        <item>@string/arabic</item>
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp">
+
+    <RelativeLayout
+        android:id="@+id/rlArrow"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp">
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:visibility="visible"
+            android:src="@drawable/backimage" />
+
+    </RelativeLayout>
+
+    <com.smubator.adwitter.CustomFonts.MyCustomTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16ssp" />
+
+</RelativeLayout>
